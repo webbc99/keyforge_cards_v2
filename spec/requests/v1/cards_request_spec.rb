@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'net/http'
 
 describe "get all cards route", type: :request do
   let!(:cards) { FactoryBot.create_list(:card, 3) }
